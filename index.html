@@ -23,10 +23,11 @@
     --mango-yellow: #FFD852;
     --mango-green: #4B9141;
     --apple-mango: #FF9838;
-    --blush: #F8E1DC;
-    --blush-deep: #EBB8B0;
-    --peach: #F5C7A9;
-    --lavender-mist: #E8DFEF;
+    --sand: #EFE5D3;
+    --sand-deep: #CBB89A;
+    --taupe: #8B7561;
+    --sage: #D4D8C2;
+    --sage-deep: #8B9275;
 
     --font-display-kr: 'Noto Serif KR', serif;
     --font-display-en: 'Fraunces', Georgia, serif;
@@ -62,9 +63,9 @@
     filter: blur(80px);
     opacity: 0.5;
   }
-  .ambient .orb.a { width: 520px; height: 520px; background: var(--blush); top: -120px; right: -80px; }
-  .ambient .orb.b { width: 420px; height: 420px; background: var(--peach); top: 40%; left: -140px; opacity: 0.35; }
-  .ambient .orb.c { width: 360px; height: 360px; background: var(--lavender-mist); bottom: -80px; right: 20%; opacity: 0.4; }
+  .ambient .orb.a { width: 520px; height: 520px; background: var(--sand); top: -120px; right: -80px; }
+  .ambient .orb.b { width: 420px; height: 420px; background: var(--sage); top: 40%; left: -140px; opacity: 0.35; }
+  .ambient .orb.c { width: 360px; height: 360px; background: var(--sand-deep); bottom: -80px; right: 20%; opacity: 0.4; }
 
   /* Paper texture overlay */
   body::before {
@@ -179,7 +180,7 @@
     font-size: 11px;
     font-weight: 600;
     color: var(--ink);
-    background: var(--blush);
+    background: var(--sand);
     padding: 6px 14px;
     border-radius: 100px;
     letter-spacing: 0.1em;
@@ -191,7 +192,7 @@
     width: 6px;
     height: 6px;
     border-radius: 50%;
-    background: var(--blush-deep);
+    background: var(--taupe);
   }
   .hero-headline {
     font-family: var(--font-display-kr);
@@ -212,7 +213,7 @@
     font-style: italic;
     font-weight: 400;
     font-size: 0.42em;
-    color: var(--blush-deep);
+    color: var(--taupe);
     margin-top: 14px;
     letter-spacing: -0.01em;
   }
@@ -285,8 +286,8 @@
     content: '';
     position: absolute;
     inset: -40px;
-    background: radial-gradient(circle at 30% 30%, var(--blush) 0%, transparent 60%),
-                radial-gradient(circle at 70% 70%, var(--peach) 0%, transparent 60%);
+    background: radial-gradient(circle at 30% 30%, var(--sand) 0%, transparent 60%),
+                radial-gradient(circle at 70% 70%, var(--sage) 0%, transparent 60%);
     border-radius: 50%;
     filter: blur(40px);
     opacity: 0.6;
@@ -310,19 +311,19 @@
     height: 100%;
     border-radius: 36px;
     overflow: hidden;
-    background: linear-gradient(170deg, #EFE2D8 0%, #F8D8CA 40%, #E8C5D4 70%, #D9CBE8 100%);
+    background: linear-gradient(165deg, #F2EBDB 0%, #E8DCC3 35%, #D4D2B8 65%, #C8C5A8 100%);
   }
   /* Aurora blobs inside phone screen */
   .phone-aurora {
     position: absolute;
     border-radius: 50%;
-    filter: blur(32px);
-    mix-blend-mode: screen;
+    filter: blur(34px);
+    mix-blend-mode: multiply;
   }
-  .phone-aurora.p1 { width: 220px; height: 220px; background: #E8A0B5; top: -40px; left: -30px; opacity: 0.7; }
-  .phone-aurora.p2 { width: 200px; height: 200px; background: #F5C88A; top: 30%; right: -50px; opacity: 0.6; }
-  .phone-aurora.p3 { width: 180px; height: 180px; background: #B8A8D8; bottom: 60px; left: -20px; opacity: 0.55; }
-  .phone-aurora.p4 { width: 160px; height: 160px; background: #F5E0A0; bottom: -20px; right: 20px; opacity: 0.5; }
+  .phone-aurora.p1 { width: 220px; height: 220px; background: #D8C8A8; top: -40px; left: -30px; opacity: 0.55; }
+  .phone-aurora.p2 { width: 200px; height: 200px; background: #C8B896; top: 30%; right: -50px; opacity: 0.5; }
+  .phone-aurora.p3 { width: 180px; height: 180px; background: #B5B598; bottom: 60px; left: -20px; opacity: 0.5; }
+  .phone-aurora.p4 { width: 160px; height: 160px; background: #E8D8A8; bottom: -20px; right: 20px; opacity: 0.45; }
 
   .phone-notch {
     position: absolute;
@@ -433,12 +434,12 @@
   /* Floating sparkle decoration around the phone */
   .sparkle {
     position: absolute;
-    color: var(--blush-deep);
-    opacity: 0.7;
+    color: var(--taupe);
+    opacity: 0.55;
   }
   .sparkle.s1 { top: 10%; right: 8%; font-size: 14px; }
   .sparkle.s2 { top: 58%; left: 0%; font-size: 22px; color: var(--mango-yellow); }
-  .sparkle.s3 { bottom: 10%; right: 10%; font-size: 18px; color: var(--peach); }
+  .sparkle.s3 { bottom: 10%; right: 10%; font-size: 18px; color: var(--sage); }
 
   /* Intro quote section */
   .intro-quote {
@@ -455,7 +456,7 @@
     color: var(--ink);
     letter-spacing: -0.015em;
   }
-  .intro-quote p .hl { color: var(--blush-deep); font-style: italic; }
+  .intro-quote p .hl { color: var(--taupe); font-style: italic; }
   .intro-quote .attr {
     font-family: var(--font-display-en);
     font-style: italic;
@@ -488,7 +489,7 @@
     display: inline-block;
     width: 24px;
     height: 1px;
-    background: var(--blush-deep);
+    background: var(--taupe);
     vertical-align: middle;
   }
   .section-label::before { margin-right: 14px; }
@@ -507,7 +508,7 @@
     font-style: italic;
     font-weight: 400;
     font-size: 0.5em;
-    color: var(--blush-deep);
+    color: var(--taupe);
     margin-top: 10px;
   }
 
@@ -534,7 +535,7 @@
     right: -60px;
     width: 240px;
     height: 240px;
-    background: var(--blush);
+    background: var(--sand);
     border-radius: 50%;
     opacity: 0.5;
   }
@@ -563,7 +564,7 @@
     width: 100%;
     height: 100%;
     border-radius: 22px;
-    background: linear-gradient(160deg, #E8C5D4 0%, #F5C88A 45%, #B8A8D8 90%);
+    background: linear-gradient(160deg, #E8DCC3 0%, #D4D2B8 45%, #B8B898 90%);
     position: relative;
     overflow: hidden;
   }
@@ -605,13 +606,13 @@
   .feature-kicker {
     font-size: 11px;
     font-weight: 600;
-    color: var(--blush-deep);
+    color: var(--taupe);
     letter-spacing: 0.14em;
     text-transform: uppercase;
     margin-bottom: 14px;
     display: inline-block;
     padding: 5px 12px;
-    background: var(--blush);
+    background: var(--sand);
     border-radius: 100px;
   }
   .feature-title-ko {
@@ -669,14 +670,14 @@
     padding: 32px;
     text-align: center;
     background: var(--paper);
-    border: 1.5px dashed var(--blush-deep);
+    border: 1.5px dashed var(--taupe);
     border-radius: 24px;
   }
   .coming-num {
     font-family: var(--font-display-en);
     font-style: italic;
     font-size: 28px;
-    color: var(--blush-deep);
+    color: var(--taupe);
     display: inline-block;
     margin-right: 12px;
     vertical-align: middle;
@@ -710,7 +711,7 @@
     font-family: var(--font-display-en);
     font-style: italic;
     font-size: 16px;
-    color: var(--blush-deep);
+    color: var(--taupe);
     margin-bottom: 18px;
     display: block;
   }
@@ -738,7 +739,7 @@
     font-family: var(--font-display-en);
     font-style: italic;
     font-size: 22px;
-    color: var(--blush-deep);
+    color: var(--taupe);
     margin-top: 32px;
     display: block;
   }
@@ -782,7 +783,7 @@
     letter-spacing: 0.02em;
   }
   .footer-meta a { color: var(--ink-dim); text-decoration: none; border-bottom: 1px solid var(--rule); }
-  .footer-meta a:hover { color: var(--ink); border-color: var(--blush-deep); }
+  .footer-meta a:hover { color: var(--ink); border-color: var(--taupe); }
   .footer-links {
     text-align: right;
     font-size: 12px;
@@ -795,7 +796,7 @@
     letter-spacing: 0.02em;
     transition: color 120ms ease;
   }
-  .footer-links a:hover { color: var(--blush-deep); }
+  .footer-links a:hover { color: var(--taupe); }
 
   @media (max-width: 860px) {
     .hero-right { order: -1; }
@@ -864,9 +865,9 @@
   <section class="hero">
     <div class="hero-left">
       <svg class="doodle doodle-1" viewBox="0 0 100 100" fill="none">
-        <path d="M20 50 Q 35 20, 50 50 T 80 50" stroke="#EBB8B0" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M20 50 Q 35 20, 50 50 T 80 50" stroke="#8B7561" stroke-width="2.5" stroke-linecap="round"/>
         <circle cx="85" cy="30" r="3" fill="#FFD852"/>
-        <circle cx="15" cy="70" r="3" fill="#F5C7A9"/>
+        <circle cx="15" cy="70" r="3" fill="#CBB89A"/>
       </svg>
       <div class="hero-badge">오늘, 마음에 도착</div>
       <h1 class="hero-headline">

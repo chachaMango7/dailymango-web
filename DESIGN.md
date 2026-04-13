@@ -104,10 +104,11 @@ Display sizes use `clamp()` for fluid scaling on mobile.
 | `--mango-yellow-ink` | `#1A1614` | Text on yellow (always ink, never white) |
 | `--mango-green` | `#4B9141` | Label accent, success states |
 | `--apple-mango` | `#FF9838` | Hover/active, emphasis (rare) |
-| `--blush` | `#F8E1DC` | Romantic soft accent surfaces |
-| `--blush-deep` | `#EBB8B0` | Pull quotes, decorative elements |
-| `--peach` | `#F5C7A9` | Warm accent surfaces |
-| `--lavender-mist` | `#E8DFEF` | Tertiary soft accent (rare) |
+| `--sand` | `#EFE5D3` | Warm neutral soft surface (replaces blush) |
+| `--sand-deep` | `#CBB89A` | Deeper warm taupe, surface borders |
+| `--taupe` | `#8B7561` | Sophisticated accent text (replaces blush-deep) |
+| `--sage` | `#D4D8C2` | Muted sage surface, freshness |
+| `--sage-deep` | `#8B9275` | Deeper sage accent, rare |
 
 **Gradients**: Avoid. If needed for app icon backgrounds only: `linear-gradient(135deg, var(--mango-yellow), var(--apple-mango))`.
 
