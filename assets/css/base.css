@@ -97,9 +97,9 @@ header.site { padding: 32px 0 0; }
 .brand-name em { font-style: italic; font-weight: 400; }
 
 .brand-wordmark {
-  height: 54px;
+  height: 80px;
   width: auto;
-  max-width: 380px;
+  max-width: 440px;
   display: block;
   object-fit: contain;
 }
@@ -298,7 +298,7 @@ article.doc a:hover { border-color: var(--apple-mango); }
   nav.top { gap: 16px; }
   nav.top a { font-size: 12px; }
   .brand-mark { width: 56px; height: 56px; }
-  .brand-wordmark { height: 36px; max-width: 220px; }
+  .brand-wordmark { height: 56px; max-width: 260px; }
   .brand { gap: 10px; }
   article.doc { padding: 48px 0 24px; }
   article.doc h2 { font-size: 19px; margin-top: 40px; }
