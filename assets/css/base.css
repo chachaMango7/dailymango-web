@@ -74,17 +74,17 @@ header.site { padding: 32px 0 0; }
 .brand {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
   text-decoration: none;
   color: var(--ink);
 }
 .brand-mark {
-  width: 38px;
-  height: 38px;
+  width: 52px;
+  height: 52px;
   border-radius: 50%;
   display: block;
   flex-shrink: 0;
-  box-shadow: 0 4px 16px -4px rgba(255, 216, 82, 0.5);
+  box-shadow: 0 6px 20px -6px rgba(255, 216, 82, 0.55);
   object-fit: contain;
 }
 .brand-name {
@@ -97,9 +97,11 @@ header.site { padding: 32px 0 0; }
 .brand-name em { font-style: italic; font-weight: 400; }
 
 .brand-wordmark {
-  height: 26px;
+  height: 34px;
   width: auto;
+  max-width: 260px;
   display: block;
+  object-fit: contain;
 }
 
 nav.top { display: flex; gap: 28px; }
@@ -295,6 +297,9 @@ article.doc a:hover { border-color: var(--apple-mango); }
   .wrap { padding: 0 24px; }
   nav.top { gap: 16px; }
   nav.top a { font-size: 12px; }
+  .brand-mark { width: 42px; height: 42px; }
+  .brand-wordmark { height: 26px; max-width: 180px; }
+  .brand { gap: 10px; }
   article.doc { padding: 48px 0 24px; }
   article.doc h2 { font-size: 19px; margin-top: 40px; }
   .footer-grid { grid-template-columns: 1fr; }
