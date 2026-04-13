@@ -108,24 +108,27 @@
     color: var(--ink);
   }
   .brand-mark {
-    width: 80px !important;
-    height: 80px !important;
+    width: 72px !important;
+    height: 72px !important;
     border-radius: 50%;
     display: block;
     flex-shrink: 0;
-    box-shadow: 0 8px 24px -8px rgba(255, 216, 82, 0.6);
+    box-shadow: 0 6px 20px -6px rgba(255, 216, 82, 0.55);
     object-fit: contain;
+    /* logo.png M 중심이 원 중심에서 9px 아래 → 위로 보정해 워드마크와 중심 정렬 */
+    transform: translateY(-9px);
   }
   .brand-wordmark {
-    height: 80px !important;
+    /* logo.png M 높이 = 원 지름의 57% → 72 × 0.57 ≈ 41px 로 워드마크 글자 높이 매칭 */
+    height: 41px !important;
     width: auto !important;
-    max-width: 440px;
+    max-width: 260px;
     display: block;
     object-fit: contain;
   }
   @media (max-width: 600px) {
-    .brand-mark { width: 56px !important; height: 56px !important; }
-    .brand-wordmark { height: 56px !important; max-width: 260px; }
+    .brand-mark { width: 56px !important; height: 56px !important; transform: translateY(-7px); }
+    .brand-wordmark { height: 32px !important; max-width: 200px; }
   }
   nav.top {
     display: flex;
