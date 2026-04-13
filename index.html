@@ -108,27 +108,26 @@
     color: var(--ink);
   }
   .brand-mark {
-    width: 72px !important;
-    height: 72px !important;
+    width: 80px !important;
+    height: 80px !important;
     border-radius: 50%;
     display: block;
     flex-shrink: 0;
     box-shadow: 0 6px 20px -6px rgba(255, 216, 82, 0.55);
     object-fit: contain;
-    /* logo.png M 중심이 원 중심에서 9px 아래 → 위로 보정해 워드마크와 중심 정렬 */
-    transform: translateY(-9px);
   }
   .brand-wordmark {
-    /* logo.png M 높이 = 원 지름의 57% → 72 × 0.57 ≈ 41px 로 워드마크 글자 높이 매칭 */
-    height: 41px !important;
+    /* dailymango-nav.png은 원 M 위치(62.5% down)에 맞춰 padding 삽입됨 */
+    /* 80px 심볼과 같은 높이로 두면 글자 중심이 M 중심과 정확히 매칭 */
+    height: 80px !important;
     width: auto !important;
-    max-width: 260px;
+    max-width: 340px;
     display: block;
     object-fit: contain;
   }
   @media (max-width: 600px) {
-    .brand-mark { width: 56px !important; height: 56px !important; transform: translateY(-7px); }
-    .brand-wordmark { height: 32px !important; max-width: 200px; }
+    .brand-mark { width: 60px !important; height: 60px !important; }
+    .brand-wordmark { height: 60px !important; max-width: 240px; }
   }
   nav.top {
     display: flex;
@@ -847,7 +846,7 @@
     <div class="site-inner">
       <a href="/" class="brand">
         <img class="brand-mark" src="/assets/logo/logo.png" alt="">
-        <img class="brand-wordmark" src="/assets/logo/dailymango.png" alt="Dailymango">
+        <img class="brand-wordmark" src="/assets/logo/dailymango-nav.png" alt="Dailymango">
       </a>
       <nav class="top">
         <a href="/paperday/">Paperday</a>
