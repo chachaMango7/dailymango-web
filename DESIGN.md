@@ -22,7 +22,9 @@ Think small-studio print matter, not SaaS template. Kinfolk magazine meets a nei
 
 **Decoration level**: **Intentional** — subtle paper texture (optional), editorial rule lines, issue numbers and metadata in sidebars. No decorative blobs, no gradients-on-everything, no icon-in-circle grids.
 
-**Mood**: Quietly confident, hand-touched, unhurried. A reader picking up a well-printed zine at a coffee shop.
+**Mood**: Quietly confident, hand-touched, unhurried, romantic. A 20-something woman picks up a beautifully printed zine at a small cafe in Hapjeong. Soft. Warm. Worth saving to her Instagram.
+
+**Target emotional response**: The visitor (primary: Korean women 20–35) should feel "이거 나 쓰고 싶다" within 3 seconds — and want to share the page itself, not just the app.
 
 **Reference feel**:
 - Kinfolk, Cereal magazine (layout density, serif treatment)
@@ -102,6 +104,10 @@ Display sizes use `clamp()` for fluid scaling on mobile.
 | `--mango-yellow-ink` | `#1A1614` | Text on yellow (always ink, never white) |
 | `--mango-green` | `#4B9141` | Label accent, success states |
 | `--apple-mango` | `#FF9838` | Hover/active, emphasis (rare) |
+| `--blush` | `#F8E1DC` | Romantic soft accent surfaces |
+| `--blush-deep` | `#EBB8B0` | Pull quotes, decorative elements |
+| `--peach` | `#F5C7A9` | Warm accent surfaces |
+| `--lavender-mist` | `#E8DFEF` | Tertiary soft accent (rare) |
 
 **Gradients**: Avoid. If needed for app icon backgrounds only: `linear-gradient(135deg, var(--mango-yellow), var(--apple-mango))`.
 
