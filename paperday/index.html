@@ -131,7 +131,17 @@
     height: 100%;
     border-radius: 36px;
     overflow: hidden;
-    background: linear-gradient(165deg, #F2EBDB 0%, #E8DCC3 35%, #D4D2B8 65%, #C8C5A8 100%);
+    background: #1a1a1c;
+  }
+  .phone-screen-img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 110%;
+    width: auto;
+    display: block;
+    pointer-events: none;
   }
   .phone-aurora {
     position: absolute;
@@ -384,25 +394,7 @@
         <div class="phone">
           <div class="phone-notch"></div>
           <div class="phone-screen">
-            <div class="phone-aurora p1"></div>
-            <div class="phone-aurora p2"></div>
-            <div class="phone-aurora p3"></div>
-            <div class="phone-aurora p4"></div>
-            <div class="phone-status">
-              <span>9:41</span>
-              <span>◐</span>
-            </div>
-            <div class="phone-header">
-              <span class="phone-date">4월 13일</span>
-              <span class="phone-weather">☀</span>
-            </div>
-            <div class="phone-quote">
-              <p class="phone-quote-text">슬픔이 깊이 파인 자리만큼<br>기쁨이 차오른다.</p>
-              <span class="phone-quote-author">— Kahlil Gibran</span>
-            </div>
-            <div class="phone-nav">
-              <span></span><span></span><span></span>
-            </div>
+            <img class="phone-screen-img" src="/assets/images/01-home.png" alt="Paperday 앱 홈 화면">
           </div>
         </div>
       </div>
