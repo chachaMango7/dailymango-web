@@ -8,7 +8,7 @@ Dailymango 서비스 웹 페이지 — 랜딩, 앱 소개, 법적 문서
 
 ```
 /                          ← Dailymango 서비스 메인
-/paperday/                 ← 마음의 쉼표 · Paperday 앱
+/paperday/                 ← Paperday (페이퍼데이) 앱
   ├── index.html           ← 앱 소개
   ├── support.html         ← 고객 지원 + FAQ
   ├── privacy.html         ← 개인정보처리방침 (한)

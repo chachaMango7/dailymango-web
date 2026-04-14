@@ -10,7 +10,7 @@
 
 - **What this is**: Service brand web presence for **Dailymango**, a mobile app studio under **Rollingmango** (parent company). Hosts the landing page, per-app pages, legal docs, and support.
 - **Who it's for**: Prospective app users in Korea (primary) and English-speaking markets (secondary). Also serves as the source for store listing URLs.
-- **Space**: Wellness / lifestyle mobile apps. First product is **마음의 쉼표 · Paperday** (daily quotes + aurora backgrounds).
+- **Space**: Wellness / lifestyle mobile apps. First product is **Paperday** (페이퍼데이) — daily quotes + aurora backgrounds.
 - **Project type**: Marketing site (static, no framework, GitHub Pages hosted).
 
 ---
@@ -37,7 +37,7 @@ Think small-studio print matter, not SaaS template. Kinfolk magazine meets a nei
 
 - **Parent brand**: Rollingmango (손글씨 워드마크 + 파도치는 M 심볼)
 - **Service brand**: Dailymango (이 웹사이트의 주인)
-- **First app under Dailymango**: 마음의 쉼표 · Paperday
+- **First app under Dailymango**: Paperday (페이퍼데이)
 
 **CI assets already defined**:
 - Mango Yellow `#FFD852`
@@ -218,7 +218,7 @@ Display sizes use `clamp()` for fluid scaling on mobile.
 
 ## Copy & Tone
 
-- **Korean primary, English secondary**. Headlines can be bilingual when the English adds texture (e.g., "마음의 쉼표 · PAPERDAY").
+- **Korean primary, English secondary**. Headlines can be bilingual when the English adds texture (e.g., "페이퍼데이 · PAPERDAY").
 - **No marketing cliches**: Avoid "Built for X", "Empowering Y", "Revolutionary", "Effortless".
 - **Concrete over aspirational**: "매일 한 줄의 명언" beats "당신의 일상에 영감을".
 - **Lowercase English for metadata**: "issue №01", "spring 2026", "made in seoul".
