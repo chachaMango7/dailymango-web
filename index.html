@@ -95,8 +95,11 @@
   }
   .site-inner {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    row-gap: 14px;
+    column-gap: 16px;
     padding-bottom: 18px;
     border-bottom: 1px solid var(--rule);
   }
@@ -171,8 +174,10 @@
   /* Issue meta bar */
   .meta-bar {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    gap: 6px 14px;
     padding: 14px 0;
     font-size: 11px;
     font-weight: 500;
@@ -879,9 +884,11 @@
   }
   @media (max-width: 600px) {
     .wrap { padding: 0 20px; }
-    nav.top { gap: 14px; }
+    .site-inner { justify-content: center; }
+    .brand { justify-content: center; }
+    nav.top { flex-wrap: wrap; justify-content: center; gap: 10px 14px; }
     nav.top a { font-size: 12px; }
-    .meta-bar { font-size: 10px; }
+    .meta-bar { font-size: 10px; justify-content: center; text-align: center; }
     .feature { padding: 32px 20px; }
     .feature-title-ko { font-size: 28px; }
     .footer-grid { grid-template-columns: 1fr; }
