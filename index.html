@@ -249,6 +249,19 @@
     margin-top: 14px;
     letter-spacing: -0.01em;
   }
+  .hero-tagline {
+    font-family: var(--font-display-kr);
+    font-weight: 500;
+    font-size: clamp(24px, 3.4vw, 36px);
+    line-height: 1.4;
+    letter-spacing: -0.025em;
+    color: var(--ink);
+    margin-bottom: 22px;
+  }
+  .hero-tagline .mark {
+    background: linear-gradient(180deg, transparent 68%, var(--mango-yellow) 68%, var(--mango-yellow) 92%, transparent 92%);
+    padding: 0 4px;
+  }
   .hero-lede {
     font-size: 17px;
     line-height: 1.8;
@@ -913,6 +926,7 @@
         <img class="brand-wordmark" src="/assets/logo/dailymango-nav.png" alt="Dailymango">
       </a>
       <nav class="top">
+        <a href="/purrhaps/">Purrhaps</a>
         <a href="/paperday/">Paperday</a>
         <a href="/bibleday/">Bibleday</a>
         <a href="#about">About</a>
@@ -937,19 +951,17 @@
         <circle cx="85" cy="30" r="3" fill="#FFD852"/>
         <circle cx="15" cy="70" r="3" fill="#CBB89A"/>
       </svg>
-      <div class="hero-badge">오늘, 마음에 도착</div>
+      <div class="hero-badge">곧 출시 · 오늘의 고양이 운세</div>
       <h1 class="hero-headline">
-        매일 한 줄의<br>
-        <span class="mark">따뜻한</span> 말,<br>
-        당신에게.
-        <span class="script">a soft whisper for every day</span>
+        <span class="mark">대략냥감</span>
       </h1>
+      <p class="hero-tagline">대충 봐도 감이 좋아<br>묘하게 잘 맞추는 고양이</p>
       <p class="hero-lede">
-        Dailymango는 매일의 평범한 순간에 작은 쉼표를 더하는 모바일 앱 브랜드입니다. 화려하지 않지만 오래 머무르는 앱을 만듭니다.
+        묘하게 맞아서 더 난감한, 오늘의 고양이 ‘신비’의 운세. Dailymango의 세 번째 앱이 곧 찾아옵니다.
       </p>
-      <a href="/paperday/" class="hero-cta">
+      <a href="/purrhaps/" class="hero-cta">
         <span class="dot"></span>
-        페이퍼데이 만나러 가기
+        대략냥감 만나러 가기
       </a>
     </div>
 
@@ -961,7 +973,7 @@
         <div class="phone">
           <div class="phone-notch"></div>
           <div class="phone-screen">
-            <img class="phone-screen-img" src="/assets/images/01-home.png" alt="Paperday 앱 홈 화면">
+            <img class="phone-screen-img" src="/assets/images/purrhaps/home.png" alt="대략냥감 앱 홈 화면">
           </div>
         </div>
       </div>
@@ -1020,6 +1032,23 @@
         <span class="feature-read">자세히 보기 <span class="arrow">→</span></span>
       </div>
     </a>
+
+    <a class="feature" href="/purrhaps/">
+      <div class="feature-visual">
+        <div class="feature-phone">
+          <div class="feature-phone-screen">
+            <img class="feature-phone-screen-img" src="/assets/images/purrhaps/home.png" alt="대략냥감 앱 홈 화면">
+          </div>
+        </div>
+      </div>
+      <div class="feature-body">
+        <span class="feature-kicker">№ 03 · Coming Soon</span>
+        <h3 class="feature-title-ko">대략냥감</h3>
+        <p class="feature-title-en">Purrhaps · Today's Cat Fortune</p>
+        <p class="feature-desc">묘하게 맞아서 더 난감한, 오늘의 고양이 운세. 고양이 ‘신비’가 사주를 담아 매일의 운세를 대충 뭐, 살며시 짚어드립니다.</p>
+        <span class="feature-read">자세히 보기 <span class="arrow">→</span></span>
+      </div>
+    </a>
   </section>
 
   <section class="about" id="about">
@@ -1045,6 +1074,7 @@
         </div>
       </div>
       <div class="footer-links">
+        <a href="/purrhaps/">Purrhaps</a>
         <a href="/paperday/">Paperday</a>
         <a href="/bibleday/">Bibleday</a>
         <a href="/paperday/support.html">Support</a>
