@@ -46,44 +46,52 @@
     <h1>Privacy Policy</h1>
     <p class="date">Effective date: To be set at launch</p>
 
-    <p>Rolling Mango Corp. (the "Company") protects your privacy under a principle of minimal collection. This policy explains what the App "Purrhaps" collects and how it is processed.</p>
+    <p>Rolling Mango Corp (the "Company") protects your privacy under a principle of minimal collection. This policy explains what the App "Purrhaps" collects and how it is processed.</p>
 
     <h2>1. Information We Collect</h2>
     <ul>
-      <li><strong>Nickname, birthday, and cat's name</strong>: entered by you and stored only on your device (local storage). Your birthday is used to compute a personalized saju-based fortune on your device and is not sent to our servers.</li>
-      <li><strong>App settings</strong> (e.g., notification on/off, reminder time): stored only on your device.</li>
-      <li><strong>Anonymous authentication identifier</strong>: an anonymous session token for server features, not linked to identifying information such as name or email.</li>
+      <li><strong>Nickname, birthday, and cat's name</strong>: entered by you and stored only on your device (local storage). Your birthday is used to compute a Saju-based personalized fortune on-device and is not sent to the server.</li>
+      <li><strong>App settings</strong> (e.g., notification on/off, notification time): stored only on your device.</li>
+      <li><strong>Login account information (optional)</strong>: if you choose to sign in with Apple or Google, the email address and account identifier provided by the login provider are stored on the authentication server (Supabase). Sign-in is optional; without it you can use the App with an anonymous session.</li>
+      <li><strong>Server-stored data</strong>: your daily fortune history and Churu balance and transaction records are stored on the server (Supabase) linked to your (anonymous or logged-in) account identifier.</li>
+      <li><strong>Advertising identifier</strong>: to serve rewarded ads, your device advertising identifier (iOS IDFA / Android Advertising ID) may be processed by Google AdMob. The Company serves ads on a non-personalized basis and does not perform cross-app or cross-web tracking.</li>
+      <li><strong>Purchase verification data</strong>: for paid purchases, receipts and transaction identifiers issued by the app stores (Apple / Google) are used to verify purchases. The Company does not collect or store payment method details such as card numbers.</li>
     </ul>
 
     <h2>2. How We Use Information</h2>
     <ul>
       <li>Computing a personalized fortune based on your birthday (on-device)</li>
       <li>Delivering fortune reminders</li>
-      <li>Server-side verification to prevent abuse of in-app purchases and ad rewards</li>
+      <li>Saving and displaying received fortunes and Churu balance</li>
+      <li>Restoring and syncing your data via account linking when you sign in</li>
+      <li>Granting rewarded-ad rewards and verifying paid purchases (including abuse prevention)</li>
     </ul>
 
     <h2>3. Retention and Deletion</h2>
-    <p>Your nickname, birthday, cat's name, and app settings are stored on your device and removed when you delete the App. The anonymous session is retained only as needed to provide server features.</p>
+    <p>Nickname, birthday, cat's name, and app settings are stored on your device and removed when you delete the App.</p>
+    <p>Your fortune history and Churu balance and transaction records are stored on the server linked to your account identifier. In an anonymous state without sign-in, deleting the App ends the anonymous session, so your balance (including purchased Churu) may not be restored upon reinstalling. If you sign in with Apple or Google, your data is linked to your account and can be restored after changing devices or reinstalling.</p>
+    <p>If you request account deletion, the server data linked to that account (fortune history, Churu balance, transaction records, etc.) is deleted along with it.</p>
 
     <h2>4. Processors and Third Parties</h2>
     <ul>
-      <li><strong>Supabase</strong>: server infrastructure used for anonymous authentication, serving fortune data, in-app purchase receipt verification, and ad-reward server verification.</li>
+      <li><strong>Supabase</strong>: server infrastructure used for anonymous and social-login authentication, serving fortune data, in-app purchase receipt verification, and ad-reward server verification.</li>
+      <li><strong>Social login (optional)</strong>: if you choose to sign in, Apple (Sign in with Apple) or Google handles authentication and provides your email and account identifier.</li>
       <li><strong>Apple App Store · Google Play</strong>: handle in-app purchase processing and receipt issuance for paid Churu packs. Payment method details (such as card numbers) are handled by each store; the Company does not collect or store them.</li>
-      <li><strong>Google AdMob</strong>: may process advertising identifiers under its own policies to serve rewarded ads.</li>
+      <li><strong>Google AdMob</strong>: processes advertising identifiers under its own policies to serve rewarded ads. The Company operates with non-personalized ads.</li>
     </ul>
 
     <h2>5. Advertising Identifiers</h2>
-    <p>The App offers rewarded ads via Google AdMob, and an advertising identifier (IDFA/GAID) may be used in the process.</p>
+    <p>Advertising identifiers (IDFA/GAID) may be used to serve rewarded ads, but the Company operates with non-personalized ads and does not perform cross-app or cross-web tracking.</p>
     <ul>
-      <li>iOS: You can disable ad tracking under Settings → Privacy &amp; Security → Tracking.</li>
-      <li>Android: You can reset your advertising ID or opt out of personalized ads under Settings → Google → Ads.</li>
+      <li>iOS: You can adjust ad-related settings under Settings → Privacy &amp; Security.</li>
+      <li>Android: You can reset or delete your Advertising ID under Settings → Privacy → Ads.</li>
     </ul>
 
     <h2>6. Children's Privacy</h2>
     <p>The App is not primarily directed to children under 14, and we do not knowingly collect their personal information.</p>
 
     <h2>7. Your Rights</h2>
-    <p>You can edit your nickname, birthday, and cat's name directly in the App, or delete all local data by removing the App.</p>
+    <p>You can edit your nickname, birthday, and cat's name directly in the App, or delete all local data by removing the App. Signed-in users may request account deletion (deletion of server-side data) via the contact below.</p>
 
     <h2>8. Contact</h2>
     <p>For privacy inquiries: <a href="mailto:info@rollingmango.co.kr">info@rollingmango.co.kr</a></p>
@@ -97,7 +105,7 @@
       <div>
         <img class="wordmark rollingmango" src="/assets/logo/logo_yellow.png" alt="Rollingmango" style="height:66px; margin-bottom:16px;">
         <div class="footer-meta">
-          © 2026 Rollingmango · Made in Seoul<br>
+          © 2026 Rolling Mango Corp · Made in Seoul<br>
           <a href="mailto:info@rollingmango.co.kr">info@rollingmango.co.kr</a>
         </div>
       </div>
