@@ -44,59 +44,78 @@
   <article class="doc">
     <span class="eyebrow">— Privacy Policy</span>
     <h1>Privacy Policy</h1>
-    <p class="date">Effective date: To be set at launch</p>
+    <p class="date">Effective date: September 1, 2026</p>
 
     <p>Rolling Mango Corp (the "Company") protects your privacy under a principle of minimal collection. This policy explains what the App "Purrhaps" collects and how it is processed.</p>
 
     <h2>1. Information We Collect</h2>
     <ul>
-      <li><strong>Nickname, birthday, and cat's name</strong>: entered by you and stored only on your device (local storage). Your birthday is used to compute a Saju-based personalized fortune on-device and is not sent to the server.</li>
+      <li><strong>Nickname, birthday, and cat's name</strong>: entered by you and stored on your device (local storage). The free daily fortune is computed from your birthday on-device, and while you use the App anonymously this information is not sent to the server. ("Profile account sync" and "Premium Saju information" below are exceptions.)</li>
+      <li><strong>Profile account sync (stored on the server when signed in)</strong>: if you sign in with Apple or Google, your profile (nickname, date of birth, time of birth, gender, cat's name) is stored on the server (Supabase) linked to your account identifier, so that you can carry your profile over after changing devices or reinstalling. While you use the App anonymously, your profile stays on your device only. Notification on/off, notification time, and onboarding completion are per-device settings and are not stored on the server.</li>
       <li><strong>App settings</strong> (e.g., notification on/off, notification time): stored only on your device.</li>
       <li><strong>Login account information (optional)</strong>: if you choose to sign in with Apple or Google, the email address and account identifier provided by the login provider are stored on the authentication server (Supabase). Sign-in is optional; without it you can use the App with an anonymous session.</li>
-      <li><strong>Server-stored data</strong>: your daily fortune history and Churu balance and transaction records are stored on the server (Supabase) linked to your (anonymous or logged-in) account identifier.</li>
+      <li><strong>Server-stored data</strong>: your daily fortune history and your Churu / Can balances and transaction records are stored on the server (Supabase) linked to your (anonymous or logged-in) account identifier.</li>
+      <li><strong>Premium Saju information (stored on the server)</strong>: when you open a premium Saju reading — whether by spending Cans or through a limited-time free promotion — the date of birth, time of birth, and gender used to produce that reading are stored on the server (Supabase) together with the entitlement, linked to your account identifier. This is so you can reopen it from your library and restore it after changing devices or reinstalling. In other words, using a premium Saju reading stores your birth information on the server regardless of whether you paid.</li>
+      <li><strong>Other people's Saju information</strong>: if you choose to create or open a reading for someone other than yourself, that person's name, date of birth, time of birth, and gender are entered and stored on the server in the same way. You must obtain lawful consent or authority from that person before entering their information.</li>
       <li><strong>Advertising identifier</strong>: to serve rewarded ads, your device advertising identifier (iOS IDFA / Android Advertising ID) may be processed by Google AdMob. The Company serves ads on a non-personalized basis and does not perform cross-app or cross-web tracking.</li>
       <li><strong>Purchase verification data</strong>: for paid purchases, receipts and transaction identifiers issued by the app stores (Apple / Google) are used to verify purchases. The Company does not collect or store payment method details such as card numbers.</li>
     </ul>
 
     <h2>2. How We Use Information</h2>
     <ul>
-      <li>Computing a personalized fortune based on your birthday (on-device)</li>
+      <li>Computing personalized fortunes and premium Saju readings based on your birth information</li>
       <li>Delivering fortune reminders</li>
-      <li>Saving and displaying received fortunes and Churu balance</li>
+      <li>Saving, displaying, and reopening received fortunes, Churu / Can balances, and premium Saju entitlements</li>
       <li>Restoring and syncing your data via account linking when you sign in</li>
       <li>Granting rewarded-ad rewards and verifying paid purchases (including abuse prevention)</li>
     </ul>
 
     <h2>3. Retention and Deletion</h2>
     <p>Nickname, birthday, cat's name, and app settings are stored on your device and removed when you delete the App.</p>
-    <p>Your fortune history and Churu balance and transaction records are stored on the server linked to your account identifier. In an anonymous state without sign-in, deleting the App ends the anonymous session, so your balance (including purchased Churu) may not be restored upon reinstalling. If you sign in with Apple or Google, your data is linked to your account and can be restored after changing devices or reinstalling.</p>
-    <p>If you request account deletion, the server data linked to that account (fortune history, Churu balance, transaction records, etc.) is deleted along with it.</p>
+    <p>Your fortune history, Churu / Can balances and transaction records, and premium Saju entitlements together with the birth information they contain (date of birth, time of birth, gender) are stored on the server linked to your account identifier. In an anonymous state without sign-in, deleting the App ends the anonymous session, so your balances (including purchased Cans and the Churu exchanged or earned from them) and Saju entitlements may not be restored upon reinstalling. If you sign in with Apple or Google, your data is linked to your account and can be restored after changing devices or reinstalling.</p>
+    <p>If you request account deletion — in the App under Settings → Account → Delete account, or via the contact below — the server data linked to that account (fortune history, balances, transaction records, premium Saju entitlements and the birth information they contain) is deleted along with it. Deletion is held for a 30-day grace period during which you can cancel it in the App and restore your data. After 30 days the server data is permanently deleted and cannot be recovered. See <a href="/purrhaps/account-deletion-en.html">Account &amp; Data Deletion</a> for the procedure.</p>
 
     <h2>4. Processors and Third Parties</h2>
     <ul>
-      <li><strong>Supabase</strong>: server infrastructure used for anonymous and social-login authentication, serving fortune data, in-app purchase receipt verification, and ad-reward server verification.</li>
+      <li><strong>Supabase</strong>: server infrastructure used for anonymous and social-login authentication, storing and serving profile / fortune / currency / Saju entitlement data, in-app purchase receipt verification, and ad-reward server verification.</li>
       <li><strong>Social login (optional)</strong>: if you choose to sign in, Apple (Sign in with Apple) or Google handles authentication and provides your email and account identifier.</li>
-      <li><strong>Apple App Store · Google Play</strong>: handle in-app purchase processing and receipt issuance for paid Churu packs. Payment method details (such as card numbers) are handled by each store; the Company does not collect or store them.</li>
+      <li><strong>Apple App Store · Google Play</strong>: handle in-app purchase processing and receipt issuance for paid Can packs. Payment method details (such as card numbers) are handled by each store; the Company does not collect or store them.</li>
       <li><strong>Google AdMob</strong>: processes advertising identifiers under its own policies to serve rewarded ads. The Company operates with non-personalized ads.</li>
     </ul>
 
-    <h2>5. Advertising Identifiers</h2>
+    <h2>5. Transfer of Personal Data Overseas</h2>
+    <p>The Company transfers personal data overseas as set out below in order to provide the Service. You may refuse the transfer, but if you do, features that require server storage (sign-in, profile sync, the premium Saju library, balance restoration, and rewarded ads) will be unavailable.</p>
+    <ul>
+      <li><strong>Supabase Inc.</strong> (United States) — Country of transfer: <strong>Japan</strong> (data center region ap-northeast-1, Tokyo) / Items: account identifier and email, profile (nickname, date of birth, time of birth, gender, cat's name), fortune history, currency balances and transaction records, premium Saju entitlements and the birth information they contain / Purpose: authentication, data storage and delivery / Retention: until the 30-day grace period after account deletion has elapsed</li>
+      <li><strong>Google LLC</strong> (United States) — Items: advertising identifier and other data needed to serve ads; email and account identifier when using social login / Purpose: serving rewarded ads, login authentication, in-app purchase processing / Retention: per that company's policy</li>
+      <li><strong>Apple Inc.</strong> (United States) — Items: email (including Private Email Relay) and account identifier when using social login; in-app purchase receipts and transaction identifiers / Purpose: login authentication, in-app purchase processing / Retention: per that company's policy</li>
+    </ul>
+
+    <h2>6. Advertising Identifiers</h2>
     <p>Advertising identifiers (IDFA/GAID) may be used to serve rewarded ads, but the Company operates with non-personalized ads and does not perform cross-app or cross-web tracking.</p>
     <ul>
       <li>iOS: You can adjust ad-related settings under Settings → Privacy &amp; Security.</li>
       <li>Android: You can reset or delete your Advertising ID under Settings → Privacy → Ads.</li>
     </ul>
 
-    <h2>6. Children's Privacy</h2>
-    <p>The App is not primarily directed to children under 14, and we do not knowingly collect their personal information.</p>
+    <h2>7. Children's Privacy</h2>
+    <p>The App is intended for users aged 14 and over. It is not primarily directed to children under 14, and we do not knowingly collect their personal information.</p>
 
-    <h2>7. Your Rights</h2>
-    <p>You can edit your nickname, birthday, and cat's name directly in the App, or delete all local data by removing the App. Signed-in users may request account deletion (deletion of server-side data) via the contact below.</p>
+    <h2>8. Your Rights</h2>
+    <p>You can edit your nickname, birthday, and cat's name directly in the App, or delete all local data by removing the App. You may also request account deletion (deletion of server-side data) in the App under Settings → Account → Delete account, or via the contact below. Within 30 days of the request you can cancel it in the App and restore your data.</p>
+    <p>You may request access to, correction of, deletion of, or suspension of the processing of your personal data. If you are dissatisfied with how the Company handles such a request, you may seek mediation or advice from the Personal Information Dispute Mediation Committee (+82-1833-6972), the Privacy Infringement Report Center (118), the Supreme Prosecutors' Office (1301), or the National Police Agency (182).</p>
 
-    <h2>8. Contact</h2>
+    <h2>9. Privacy Officer</h2>
+    <p>The Company has designated a privacy officer who is responsible for personal data processing and for handling user inquiries, complaints, and remedies.</p>
+    <ul>
+      <li>Privacy Officer: Park Junghoon (CEO)</li>
+      <li>Contact: <a href="mailto:info@rollingmango.co.kr">info@rollingmango.co.kr</a></li>
+    </ul>
+
+    <h2>10. Contact</h2>
     <p>For privacy inquiries: <a href="mailto:info@rollingmango.co.kr">info@rollingmango.co.kr</a></p>
 
-    <h2>9. Changes to This Policy</h2>
+    <h2>11. Changes to This Policy</h2>
     <p>If this policy changes, we will notify you via an app update or this page.</p>
   </article>
 
