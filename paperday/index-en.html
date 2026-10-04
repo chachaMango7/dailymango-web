@@ -414,6 +414,26 @@
   if (!src && /(^|\.)instagram\.com$/.test((function () { try { return new URL(document.referrer).hostname; } catch (e) { return ''; } })())) {
     src = 'instagram'; med = 'social'; cmp = 'bio';
   }
+  // 랜딩 방문과 스토어 클릭을 출처별로 GA4 에 센다 — iOS 는 App Store 귀속이 안 되므로 여기서 직접 잰다.
+  // gtag.js 는 client_storage:'none' 을 줘도 _ga 쿠키를 만든다(2026-10-04 실측). 쿠키 고지가 필요 없도록
+  // 스크립트를 싣지 않고 같은 수집 엔드포인트로 직접 보낸다. 식별자는 페이지마다 새로 만들고 저장하지 않는다.
+  var now = Math.floor(Date.now() / 1000), seq = 0;
+  var cid = Math.floor(Math.random() * 2147483647) + '.' + now;
+  function hit(en, extra) {
+    var p = { v: '2', tid: 'G-WXQ78ZY45N', cid: cid, sid: String(now), sct: '1', seg: '1', _s: String(++seq),
+      en: en, dl: location.href, dr: document.referrer, dt: document.title, ul: (navigator.language || '').toLowerCase(),
+      sr: screen.width + 'x' + screen.height };
+    if (src) { p.cs = src; p.cm = med || ''; p.cn = cmp || ''; }
+    for (var k in extra) p[k] = extra[k];
+    var u = 'https://www.google-analytics.com/g/collect?' + new URLSearchParams(p).toString();
+    if (!(navigator.sendBeacon && navigator.sendBeacon(u))) fetch(u, { method: 'POST', mode: 'no-cors', keepalive: true, credentials: 'omit' });
+  }
+  hit('page_view', { _fv: '1', _ss: '1', _nsi: '1' });
+  document.querySelectorAll('a[href^="https://play.google.com/store/apps/details"], a[href^="https://apps.apple.com/"]').forEach(function (a) {
+    a.addEventListener('click', function () {
+      hit('store_click', { 'ep.store': a.hostname === 'apps.apple.com' ? 'appstore' : 'play', 'ep.src': src || 'direct', _et: '1' });
+    });
+  });
   if (!src) return;
   var ref = 'utm_source=' + encodeURIComponent(src) + '&utm_medium=' + encodeURIComponent(med || '') + '&utm_campaign=' + encodeURIComponent(cmp || '');
   document.querySelectorAll('a[href^="https://play.google.com/store/apps/details"]').forEach(function (a) {
